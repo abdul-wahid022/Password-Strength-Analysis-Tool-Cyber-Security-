@@ -1,0 +1,123 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    background: linear-gradient(to top, #4e54c8, #8f94fb);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: 0;
+    align-items: center;
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.header {
+    color: white;
+    margin-top: 50px;
+}
+
+.header h1 {
+    margin-bottom: 20px;
+}
+
+.header p {
+    margin-bottom: 30px;
+}
+
+.header button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    color: #4e54c8;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.header button:hover {
+    background: #f0f0f0;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.feature i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+    color: #4e54c8;
+}
+
+.feature p {
+    color: #333;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+}

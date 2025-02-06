@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="Tool.css">
+</head>
+<body>
+    <div class="background">
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <!--<a href="Tool.html">Tool</a> !-->
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="CaseStudy.html">Case</a>
+        </nav>
+    <div class="header">
+        
+    </div>
+    <div class="container">
+        <h1>Password Strength Checker</h1>
+
+        <!-- Password input field -->
+        <div class="input-container">
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" placeholder="Enter your password" />
+            <p id="shortWarning"></p>
+        </div>
+
+        <!-- Password strength display -->
+        <div id="strengthMeter" class="strength-meter">
+            <div id="strengthBar" class="strength-bar"></div>
+        </div>
+        <p id="feedback"></p>
+
+        <!-- Password strength score -->
+        <p id="score"></p>
+
+        <!-- Password Criteria -->
+        <div>
+            <label>
+                <input type="checkbox" id="uppercaseCheck"> Includes Uppercase Letters
+            </label>
+            <label>
+                <input type="checkbox" id="numberCheck"> Includes Numbers
+            </label>
+            <label>
+                <input type="checkbox" id="specialCheck"> Includes Special Characters
+            </label>
+        </div>
+
+        <!-- Password history -->
+        <h2>Password History</h2>
+        <ul id="passwordHistory"></ul>
+
+        <!-- Generate random strong password button -->
+        <button id="generatePassword">Generate Random Strong Password</button>
+        <p id="generatedPassword"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/zxcvbn@4.4.2/dist/zxcvbn.js"></script>
+    <script src="Tool.js"></script>
+</body>
+</html>
